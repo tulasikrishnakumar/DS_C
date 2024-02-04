@@ -29,8 +29,11 @@ void HeapSort(int arr[],int n){
     Heapify(arr,i,0);
   }
 }
-PrintArray
-
+int printArray(int arr[],int n){
+  for(int i=0;i<n;i++){
+    printf("%d ",arr[i]);
+  }
+}
 
 int main(){
   int n;
@@ -41,6 +44,6 @@ int main(){
   for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
   }
-
   HeapSort(arr, n);
+  printArray(arr,n);
 }
