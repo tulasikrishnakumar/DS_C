@@ -63,12 +63,14 @@ struct node *delete_bst(struct node *root,int key){
     struct node *ipre;
     if(root==NULL)
         return NULL;
-    if(root->right==NULL && root->left==NULL)
+    if(root->right==NULL && root->left==NULL){
         free(root);
+        return NULL;
+    }
     else if(key>root->data)
-        delete_bst(root->right,key);
+        root->right=delete_bst(root->right,key);
     else if(key<root->data)
-        delete_bst(root->left,key);
+        root->left=delete_bst(root->left,key);
     else{
         ipre=inprecedoor(root);
         root->data=ipre->data;
@@ -86,10 +88,13 @@ int main(){
     root=insert(root,2);
     root=insert(root,1);
     root=insert(root,9);
-    printf("inorder\n");
+    printf("\ninorder\n");
     inOrder(root);
     delete_bst(root,9);
-    printf("inorder\n");
+    printf("\ninorder\n");
+    inOrder(root);
+    delete_bst(root,5);
+    printf("\ninorder\n");
     inOrder(root);
 
     // Finally The tree looks like this:
