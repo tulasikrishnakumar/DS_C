@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT STATUS MANAGER</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .button{
+            background-color: whitesmoke;
+            border: solid;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.595);
+            color: #8c00ff;
+            border-radius: 4px;
+            font-weight: bolder;
+            padding: 5px 10px;
+            margin: 7px;
+        }
+        .button:hover{
+            cursor: pointer;
+            color: white;
+            box-shadow: 0px 0px 5px rgb(0, 0, 0,.7);
+            background-color: #8c00ff;
+            transition: background-color .5s ,color .5s;
+        }
+        .button:active{
+            box-shadow: 0px 0px 5px rgb(187, 0, 255);
+            background-color: white;
+            color: #8c00ff;
+        }
+        .teams{
+            margin: 10px;
+            margin-top: 25px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px; 
+        }
+        .teams:hover{
+            transition: box-shadow .2s, border 0.3s;
+            
+            box-shadow: 0px 0px 15px rgba(157, 0, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="text-align: center;
+        background-color:rgb(255, 255, 255);
+        color: rgb(162, 0, 255);
+        vertical-align: middle;
+        padding: 20px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        border: solid;
+        border-radius: 3px;
+        border-width: 3px;
+        margin: 0px;">
+        PROJECT STATUS MANAGER</p>
+    </div>
+    <div>
+        <div class="teams">
+            <div>
+                <p style="background-color: #8c00ff;
+                padding: 10px;
+                margin: 0px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 5px;">
+                TEAM-1 </p>
+            </div>
+            <div style="
+            display: grid;
+            grid-template-columns: 1fr 20px 1fr;
+            padding: 5px;">
+                <div>Project Title</div>
+                <div>:</div>
+                <div>Seeting Arrangement</div>
+                <div>Team Members</div>
+                <div>:</div>
+                <div>A.Thilak<br>Vihan<br>tharun<br>hansini</div>
+                <div>Guide</div>
+                <div>:</div>
+                <div>Dr.P.Sushma</div>
+            </div>
+            <div style="text-align: center;"><button class="button">View Status</button></div>
+        </div>
+        <div class="teams">
+            <div>
+                <p style="background-color: #8c00ff;
+                color: white;
+                padding: 10px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 3px;">
+                TEAM-2 </p>
+            </div>
+            <div style="
+            display: grid;
+            grid-template-columns: 1fr 20px 1fr;
+            padding: 5px;">
+                <div>Project Title</div>
+                <div>:</div>
+                <div>Data Visualization</div>
+                <div>Team Members</div>
+                <div>:</div>
+                <div>M.Pavan Mahesh<br>Soumya<br>Sriram<br>hansini</div>
+                <div>Guide</div>
+                <div>:</div>
+                <div>Dr.P.Sushma</div>
+            </div>
+            <div style="text-align: center;"><button class="button">View Status</button></div>
+    </div>
+    
+</body>
+</html>
